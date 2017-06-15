@@ -5,8 +5,8 @@
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open:src",
-    "open:src": "babel-node buildScripts/srcServer.js",
     "security-check": "nsp check",
+    "open:src": "babel-node buildScripts/srcServer.js",
     "localtunnel": "lt --port 3000 --subdomain jarrad",
     "share": "npm-run-all --parallel open:src localtunnel"
   },
