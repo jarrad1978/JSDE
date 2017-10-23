@@ -15,7 +15,7 @@ export default {
     filename: 'bundle.js'
   },
   plugins: [
-    //Create HTML file that includes ref to bundled JS
+    // Create HTML file that includes reference to bundled JS.
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       inject: true
@@ -24,7 +24,7 @@ export default {
   module: {
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel']},
-      {test: /\.css$/, loaders: ['style', 'css']}
+      {test: /\.css$/, loaders: ['style','css']}
     ]
   }
 }
