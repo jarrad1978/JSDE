@@ -25,7 +25,8 @@ export default {
     //Use Webpack MD5 hash plugin to hash filenames
     new WebpackMd5Hash(),
 
-    //Use CommonsChunkPlugin to create a separate bundle of vendor libraries so tha they're cached seperately
+    //Use CommonsChunkPlugin to create a separate bundle
+    // of vendor libraries so tha they're cached seperately
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor'
     }),
