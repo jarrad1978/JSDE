@@ -22,7 +22,6 @@ getUsers().then(result => {
 
   //Must use array.from to create a real array from a DOM collection
   // getElementsByClassname only returns an "array like" object
-
   Array.from(deleteLinks, link => {
     link.onclick = function(event){
       const element = event.target;
@@ -31,7 +30,5 @@ getUsers().then(result => {
       const row = element.parentNode.parentNode;
       row.parentNode.removeChild(row);
     };
-
   });
-
 });
